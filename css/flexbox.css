@@ -1,0 +1,37 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.row,
+  .col {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+		flex: 1;
+    flex-direction:column;
+	}
+  .button {
+  margin-top: auto; /* this pins the buttons to the bottom of the columns. The browser automatically inserts the extra space in a column between the button and the flex item above it. */
+  align-self: flex-start;  /* this prevents your buttons to stretch the full width of a column */
+}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
